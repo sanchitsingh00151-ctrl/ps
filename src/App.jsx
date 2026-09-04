@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="app-container">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       <main>
         <Hero />

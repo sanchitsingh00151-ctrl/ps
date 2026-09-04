@@ -1,10 +1,10 @@
 export default function Navbar() {
   return (
-    <header className="navbar">
-      <div className="navbar-container">
-        <a href="#hero" className="navbar-logo">
+    <header className="fixed top-0 left-0 right-0 z-[1000] bg-white/95 backdrop-blur-[12px] border-b border-border-subtle h-[72px]">
+      <div className="max-w-[1280px] h-full mx-auto px-6 flex items-center justify-between">
+        <a href="#hero" className="flex items-center gap-3 text-ps-blue transition-opacity duration-200 ease-in-out hover:opacity-85">
           <svg
-            className="ps-logo-icon"
+            className="w-[38px] h-[30px] text-ps-blue"
             viewBox="0 0 50 40"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -19,25 +19,25 @@ export default function Navbar() {
               fill="currentColor"
             />
           </svg>
-          <span className="navbar-logo-text">PlayStation</span>
+          <span className="font-heading font-extrabold text-[1.35rem] tracking-[-0.5px] text-text-main">PlayStation</span>
         </a>
 
         {/* Navigation Links */}
-        <nav className="navbar-links">
-          <a href="#games" className="nav-link">
+        <nav className="max-[768px]:hidden flex items-center gap-9">
+          <a href="#games" className="font-heading font-semibold text-[0.95rem] text-text-muted transition-colors duration-200 ease relative py-2 hover:text-ps-blue after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-ps-blue after:transition-all after:duration-300 after:ease-ps-smooth hover:after:w-full">
             Games
           </a>
-          <a href="#ps5-showcase" className="nav-link">
+          <a href="#ps5-showcase" className="font-heading font-semibold text-[0.95rem] text-text-muted transition-colors duration-200 ease relative py-2 hover:text-ps-blue after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-ps-blue after:transition-all after:duration-300 after:ease-ps-smooth hover:after:w-full">
             PS5
           </a>
-          <a href="#accessories" className="nav-link">
+          <a href="#accessories" className="font-heading font-semibold text-[0.95rem] text-text-muted transition-colors duration-200 ease relative py-2 hover:text-ps-blue after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-ps-blue after:transition-all after:duration-300 after:ease-ps-smooth hover:after:w-full">
             Accessories
           </a>
         </nav>
 
         {/* Sign In Button */}
-        <div className="navbar-actions">
-          <button type="button" className="btn-signin">
+        <div className="flex items-center gap-4">
+          <button type="button" className="max-[768px]:hidden bg-ps-blue text-white font-heading font-bold text-[0.9rem] px-[22px] py-2 rounded-[20px] transition-colors duration-200 ease hover:bg-ps-blue-hover">
             Sign In
           </button>
         </div>

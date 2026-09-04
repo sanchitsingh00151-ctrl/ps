@@ -1,13 +1,13 @@
 export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-container">
+    <footer className="bg-white border-t border-border-subtle pt-[60px] pb-8 mt-auto">
+      <div className="max-w-[1280px] mx-auto px-6">
         {/* Top Footer Row: Logo & Main Navigation */}
-        <div className="footer-top">
-          <div className="footer-brand">
-            <a href="#hero" className="footer-logo">
+        <div className="flex items-center justify-between flex-wrap gap-8 mb-10 max-[768px]:flex-col max-[768px]:items-start">
+          <div className="flex flex-col gap-[6px]">
+            <a href="#hero" className="flex items-center gap-3 text-ps-blue">
               <svg
-                className="ps-logo-icon"
+                className="w-[38px] h-[30px] text-ps-blue"
                 viewBox="0 0 50 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -21,44 +21,44 @@ export default function Footer() {
                   fill="currentColor"
                 />
               </svg>
-              <span className="footer-logo-text">PlayStation</span>
+              <span className="font-heading font-extrabold text-[1.25rem] text-text-main">PlayStation</span>
             </a>
-            <p className="footer-tagline">Play Has No Limits™</p>
+            <p className="text-[0.85rem] text-text-dim font-medium">Play Has No Limits™</p>
           </div>
 
-          <div className="footer-nav">
-            <a href="#hero" className="footer-link">Home</a>
-            <a href="#games" className="footer-link">Games</a>
-            <a href="#ps5-showcase" className="footer-link">PS5 Console</a>
-            <a href="#accessories" className="footer-link">Accessories</a>
+          <div className="flex gap-7 flex-wrap">
+            <a href="#hero" className="font-heading font-semibold text-[0.9rem] text-text-muted transition-colors duration-200 ease hover:text-ps-blue">Home</a>
+            <a href="#games" className="font-heading font-semibold text-[0.9rem] text-text-muted transition-colors duration-200 ease hover:text-ps-blue">Games</a>
+            <a href="#ps5-showcase" className="font-heading font-semibold text-[0.9rem] text-text-muted transition-colors duration-200 ease hover:text-ps-blue">PS5 Console</a>
+            <a href="#accessories" className="font-heading font-semibold text-[0.9rem] text-text-muted transition-colors duration-200 ease hover:text-ps-blue">Accessories</a>
           </div>
 
           {/* Social Media Placeholders */}
-          <div className="footer-socials">
-            <span className="social-badge" title="Twitter / X">X</span>
-            <span className="social-badge" title="Instagram">IG</span>
-            <span className="social-badge" title="YouTube">YT</span>
-            <span className="social-badge" title="Twitch">TV</span>
+          <div className="flex gap-3">
+            <span className="w-9 h-9 rounded-full bg-bg-section-alt border border-border-subtle text-text-muted flex items-center justify-center font-heading font-bold text-[0.8rem] transition-all duration-200 ease cursor-pointer hover:bg-ps-blue hover:border-ps-blue hover:text-white hover:-translate-y-[2px]" title="Twitter / X">X</span>
+            <span className="w-9 h-9 rounded-full bg-bg-section-alt border border-border-subtle text-text-muted flex items-center justify-center font-heading font-bold text-[0.8rem] transition-all duration-200 ease cursor-pointer hover:bg-ps-blue hover:border-ps-blue hover:text-white hover:-translate-y-[2px]" title="Instagram">IG</span>
+            <span className="w-9 h-9 rounded-full bg-bg-section-alt border border-border-subtle text-text-muted flex items-center justify-center font-heading font-bold text-[0.8rem] transition-all duration-200 ease cursor-pointer hover:bg-ps-blue hover:border-ps-blue hover:text-white hover:-translate-y-[2px]" title="YouTube">YT</span>
+            <span className="w-9 h-9 rounded-full bg-bg-section-alt border border-border-subtle text-text-muted flex items-center justify-center font-heading font-bold text-[0.8rem] transition-all duration-200 ease cursor-pointer hover:bg-ps-blue hover:border-ps-blue hover:text-white hover:-translate-y-[2px]" title="Twitch">TV</span>
           </div>
         </div>
 
-        <div className="footer-divider"></div>
+        <div className="w-full h-[1px] bg-border-subtle mb-8"></div>
 
         {/* Bottom Footer Row: Legal, Region & Copyright */}
-        <div className="footer-bottom">
-          <div className="footer-region">
-            <span className="globe-icon">&#127760;</span>
-            <span className="region-text">India / English</span>
+        <div className="flex items-center justify-between flex-wrap gap-5 max-[768px]:flex-col max-[768px]:items-start">
+          <div className="flex items-center gap-2 text-[0.85rem] text-text-muted font-heading font-semibold">
+            <span className="text-[1rem]">&#127760;</span>
+            <span>India / English</span>
           </div>
 
-          <div className="footer-legal">
-            <a href="#privacy" className="legal-link" onClick={(e) => e.preventDefault()}>Support</a>
-            <a href="#terms" className="legal-link" onClick={(e) => e.preventDefault()}>Privacy Policy</a>
-            <a href="#terms" className="legal-link" onClick={(e) => e.preventDefault()}>Website Terms</a>
-            <a href="#sitemap" className="legal-link" onClick={(e) => e.preventDefault()}>Legal</a>
+          <div className="flex gap-5 flex-wrap">
+            <a href="#privacy" className="text-[0.85rem] text-text-dim transition-colors duration-200 ease hover:text-text-muted" onClick={(e) => e.preventDefault()}>Support</a>
+            <a href="#terms" className="text-[0.85rem] text-text-dim transition-colors duration-200 ease hover:text-text-muted" onClick={(e) => e.preventDefault()}>Privacy Policy</a>
+            <a href="#terms" className="text-[0.85rem] text-text-dim transition-colors duration-200 ease hover:text-text-muted" onClick={(e) => e.preventDefault()}>Website Terms</a>
+            <a href="#sitemap" className="text-[0.85rem] text-text-dim transition-colors duration-200 ease hover:text-text-muted" onClick={(e) => e.preventDefault()}>Legal</a>
           </div>
 
-          <p className="footer-copyright">
+          <p className="text-[0.8rem] text-text-dim w-full mt-4">
             &copy; {new Date().getFullYear()} Sony Interactive Entertainment LLC. College Project Clone.
           </p>
         </div>
